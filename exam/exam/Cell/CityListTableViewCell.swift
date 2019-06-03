@@ -40,6 +40,7 @@ class CityListTableViewCell: UITableViewCell {
         self.lblSubtitle?.text = strSubtitle
         self.viewContainer.backgroundColor = color;
         self.lblShortname?.text = String((strName?.prefix(3))!)
+        self.imgviewBanner.isHidden = true
         if (strbanner != nil) {
             let url = URL(string: strbanner!)
             let data = try? Data(contentsOf: url!)
